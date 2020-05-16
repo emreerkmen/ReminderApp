@@ -226,7 +226,7 @@ public class AddReminderActivity extends AppCompatActivity {
                     mRepeatTime = Integer.parseInt(mRepeatNmbr) * milMonth;
                 }
 
-                if(mRepeat.equals(true)){
+                if(mRepeat.equals("true")){
                     new AlarmReceiver().setRepeatAlarm(getApplicationContext(), mCalendar, mRepeatTime);
                 }else{
                     new AlarmReceiver().setAlarm(getApplicationContext(),mCalendar);
